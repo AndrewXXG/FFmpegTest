@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19F84DD61C8F2BF0007C3394 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F84DD51C8F2BF0007C3394 /* libiconv.tbd */; };
+		19F84DD81C8F2BF9007C3394 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F84DD71C8F2BF9007C3394 /* libbz2.tbd */; };
+		19F84DDA1C8F2BFF007C3394 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F84DD91C8F2BFF007C3394 /* libz.tbd */; };
 		CFA795AD1AF5F1BB00E56796 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA795AC1AF5F1BB00E56796 /* main.m */; };
 		CFA795B01AF5F1BB00E56796 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CFA795AF1AF5F1BB00E56796 /* AppDelegate.mm */; };
 		CFA795B31AF5F1BB00E56796 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA795B21AF5F1BB00E56796 /* ViewController.m */; };
@@ -21,9 +24,6 @@
 		CFA796411AF5F21500E56796 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA7963A1AF5F21500E56796 /* libavutil.a */; };
 		CFA796421AF5F21500E56796 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA7963B1AF5F21500E56796 /* libswresample.a */; };
 		CFA796431AF5F21500E56796 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA7963C1AF5F21500E56796 /* libswscale.a */; };
-		CFA796531AF6111500E56796 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA796521AF6111500E56796 /* libz.dylib */; };
-		CFA796551AF6112700E56796 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA796541AF6112700E56796 /* libbz2.dylib */; };
-		CFA796571AF6112F00E56796 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA796561AF6112F00E56796 /* libiconv.dylib */; };
 		CFA796641AF6427200E56796 /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7965A1AF6427200E56796 /* KxAudioManager.m */; };
 		CFA796651AF6427200E56796 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFA7965D1AF6427200E56796 /* kxmovie.bundle */; };
 		CFA796661AF6427200E56796 /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7965F1AF6427200E56796 /* KxMovieDecoder.m */; };
@@ -42,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F84DD51C8F2BF0007C3394 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		19F84DD71C8F2BF9007C3394 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		19F84DD91C8F2BFF007C3394 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CFA795A71AF5F1BB00E56796 /* FFmpegTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA795AB1AF5F1BB00E56796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFA795AC1AF5F1BB00E56796 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,9 +157,6 @@
 		CFA7963A1AF5F21500E56796 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		CFA7963B1AF5F21500E56796 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		CFA7963C1AF5F21500E56796 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
-		CFA796521AF6111500E56796 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CFA796541AF6112700E56796 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
-		CFA796561AF6112F00E56796 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		CFA796591AF6427200E56796 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		CFA7965A1AF6427200E56796 /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxAudioManager.m; sourceTree = "<group>"; };
 		CFA7965B1AF6427200E56796 /* KxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
@@ -175,9 +175,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA796571AF6112F00E56796 /* libiconv.dylib in Frameworks */,
-				CFA796551AF6112700E56796 /* libbz2.dylib in Frameworks */,
-				CFA796531AF6111500E56796 /* libz.dylib in Frameworks */,
+				19F84DDA1C8F2BFF007C3394 /* libz.tbd in Frameworks */,
+				19F84DD81C8F2BF9007C3394 /* libbz2.tbd in Frameworks */,
+				19F84DD61C8F2BF0007C3394 /* libiconv.tbd in Frameworks */,
 				CFA796411AF5F21500E56796 /* libavutil.a in Frameworks */,
 				CFA796431AF5F21500E56796 /* libswscale.a in Frameworks */,
 				CFA7963F1AF5F21500E56796 /* libavfilter.a in Frameworks */,
@@ -201,9 +201,6 @@
 		CFA7959E1AF5F1BB00E56796 = {
 			isa = PBXGroup;
 			children = (
-				CFA796561AF6112F00E56796 /* libiconv.dylib */,
-				CFA796541AF6112700E56796 /* libbz2.dylib */,
-				CFA796521AF6111500E56796 /* libz.dylib */,
 				CFA795A91AF5F1BB00E56796 /* FFmpegTest */,
 				CFA795C31AF5F1BB00E56796 /* FFmpegTestTests */,
 				CFA795A81AF5F1BB00E56796 /* Products */,
@@ -239,6 +236,9 @@
 		CFA795AA1AF5F1BB00E56796 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				19F84DD91C8F2BFF007C3394 /* libz.tbd */,
+				19F84DD71C8F2BF9007C3394 /* libbz2.tbd */,
+				19F84DD51C8F2BF0007C3394 /* libiconv.tbd */,
 				CFA795AB1AF5F1BB00E56796 /* Info.plist */,
 				CFA795AC1AF5F1BB00E56796 /* main.m */,
 			);
@@ -780,6 +780,7 @@
 				CFA795CC1AF5F1BB00E56796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFA795CD1AF5F1BB00E56796 /* Build configuration list for PBXNativeTarget "FFmpegTestTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +789,7 @@
 				CFA795CF1AF5F1BB00E56796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

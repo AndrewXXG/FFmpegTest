@@ -212,39 +212,34 @@
     NSString *path;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     
-//    if (indexPath.section == 0) {
-//        
-//        if (indexPath.row >= _remoteMovies.count) return;
-//        path = _remoteMovies[indexPath.row];
-//        
-//    } else {
-//        
-//        if (indexPath.row >= _localMovies.count) return;
+    if (indexPath.section == 0) {
+        
+        if (indexPath.row >= _remoteMovies.count) return;
+        path = _remoteMovies[indexPath.row];
+        
+    } else {
+        
+        if (indexPath.row >= _localMovies.count) return;
 //        NSLog(@"did --- %@",_localMovies[indexPath.row]);
-//        path = _localMovies[indexPath.row];
-//    }
+        path = _localMovies[indexPath.row];
+    }
     
     // increase buffering for .wmv, it solves problem with delaying audio frames
-//    if ([path.pathExtension isEqualToString:@"wmv"])
-//        parameters[KxMovieParameterMinBufferedDuration] = @(5.0);
-//    
-//    // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
-//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-//        parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
+    if ([path.pathExtension isEqualToString:@"wmv"])
+        parameters[KxMovieParameterMinBufferedDuration] = @(5.0);
+    
+    // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
     
     // disable buffering
     //parameters[KxMovieParameterMinBufferedDuration] = @(0.0f);
     //parameters[KxMovieParameterMaxBufferedDuration] = @(0.0f);
     
-    
-    path =  @"/Users/gyh/Desktop/20160224-115057.avi";
-    
     KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
                                                                                parameters:parameters];
     [self presentViewController:vc animated:YES completion:nil];
-    //[self.navigationController pushViewController:vc animated:YES];    
-    
-   // LoggerApp(1, @"Playing a movie: %@", path);
+
 }
 
 @end
