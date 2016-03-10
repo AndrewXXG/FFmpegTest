@@ -4,3 +4,32 @@
 - 图片展示<br>
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/1.png)
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/2.png)
+
+##代码
+'''
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *path;
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row >= _remoteMovies.count) return;
+        path = _remoteMovies[indexPath.row];
+    } else {
+        if (indexPath.row >= _localMovies.count) return;
+        path = _localMovies[indexPath.row];
+    }
+
+    if ([path.pathExtension isEqualToString:@"wmv"])
+        parameters[KxMovieParameterMinBufferedDuration] = @(5.0);
+
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
+
+    KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
+                                                                               parameters:parameters];
+    [self presentViewController:vc animated:YES completion:nil];
+
+}
+
+'''
