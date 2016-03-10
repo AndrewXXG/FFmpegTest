@@ -7,6 +7,10 @@
 
 ##代码
 ```objc
+   //导入头文件
+   #import "KxMovieViewController.h"
+```
+```objc
    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *path;
@@ -29,7 +33,15 @@
     KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
                                                                                parameters:parameters];
     [self presentViewController:vc animated:YES completion:nil];
-
 }
+```
+###调用简单
+```objc
+//path为播放文件的路径，若为本地文件就直接用文件沙盒路径
+//若为网络视频，请调用视频的网络url
+   KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
+                                                                               parameters:parameters];
+    [self presentViewController:vc animated:YES completion:nil];
+```
 
 
