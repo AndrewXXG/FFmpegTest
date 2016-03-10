@@ -6,8 +6,7 @@
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/2.png)
 
 ##代码
-'''
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+   - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *path;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -32,4 +31,4 @@
 
 }
 
-'''
+
