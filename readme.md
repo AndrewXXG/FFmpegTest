@@ -6,6 +6,7 @@
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/2.png)
 
 ##代码
+```objc
    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *path;
