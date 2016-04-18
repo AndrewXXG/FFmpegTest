@@ -1,11 +1,12 @@
 ##FFmpegTest
 ###利用 FFmpeg 做的一个视频播放的demo<br>
-###支持各种视频格式播放（mp4/avi/rmvb/3gp/mov/flv/m3u8/rm）支持远程视频播放以及本地视频播放
+- 支持各种视频格式播放（mp4/avi/rmvb/3gp/mov/flv/m3u8/rm）支持远程视频播放以及本地视频播放
 - 图片展示<br>
+
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/1.png)
 ![image](https://raw.githubusercontent.com/gaoyuhang/FFmpegTest/master/photo/2.png)
 
-##代码
+###代码
 ```objc
    //导入头文件
    #import "KxMovieViewController.h"
@@ -35,7 +36,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 ```
-###调用简单
+####调用简单
 ```objc
 //path为播放文件的路径，若为本地文件就直接用文件沙盒路径
 //若为网络视频，请调用视频的网络url
